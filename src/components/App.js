@@ -4,7 +4,7 @@ import { Statistics } from './Statistics/Statistics';
 import statisticsStats from '../data.json';
 import { FriendsList } from './FriendsList/FriendsList';
 import friends from '../friends.json';
-import { TransactionHistory } from './TransactionHistory';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import transactions from '../transactions.json'
 import { GlobalStyle } from './GlobalStyle';
 export const App = () => {
