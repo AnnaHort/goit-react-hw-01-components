@@ -11,8 +11,8 @@ export const TransactionHistory = ({items}) => {
     </TrHead>
 </Thead>
 <Tbody>
-    {items.map(item => (
-        <TbodyTr key={item.id}>
+    {items.map((item,index) => (
+        <TbodyTr key={item.id} $even={index % 2 === 0}>
         <TbodyTd>{item.type}</TbodyTd>
         <TbodyTd>{item.amount}</TbodyTd>
         <TbodyTd>{item.currency}</TbodyTd>

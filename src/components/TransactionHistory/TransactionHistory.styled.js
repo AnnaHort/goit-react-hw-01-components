@@ -34,7 +34,6 @@ export const Tbody = styled.tbody`
     flex-direction: column;
     padding: 8px 0;
     gap: 8px;
-    background-color: lightgrey;
 `;
 
 export const TbodyTr = styled.tr`
@@ -43,7 +42,8 @@ export const TbodyTr = styled.tr`
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  background-color: #fff;
+  background-color: ${props => (props.$even ? '#ffffff' : '#f0f0f0')};
+ 
 `;
 
 export const TbodyTd = styled.td`
