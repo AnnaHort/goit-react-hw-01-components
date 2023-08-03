@@ -5,6 +5,10 @@ display: flex;
 flex-direction: column;
 gap: 8px;
 margin-top: 80px;
+margin-bottom: 80px;
+margin-right: auto;
+margin-left: auto;
+width: 500px;
 
 `
 
