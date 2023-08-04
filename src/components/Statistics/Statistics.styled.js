@@ -1,26 +1,20 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
+margin-top: 80px;
 margin-right: auto;
 margin-left: auto;
-margin-top: 80px;
-width: 400px;
-border-radius: 5px;
-display: flex;
-flex-direction: column;
-align-items: center;
+  text-align: center;
+  width: 500px;
+  border: 1px solid black;
+
 `
 
-// export const Title = styled.h2`
-// border: 1px solid;
-// padding: 16px 110px;
-// border-bottom: 0;
-// font-size: 24px;
-// font-weight: bold;
-// `
-
 export const List = styled.ul`
-display: flex;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
 `
 
 // Функція для генерації рандомного HEX-коду кольору
@@ -34,8 +28,13 @@ export const getRandomColor = () => {
   };
 
 export const ListItem = styled.li`
-padding: 12px;
-border: 1px solid;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
 background-color: ${props => props.color};
 `
 
