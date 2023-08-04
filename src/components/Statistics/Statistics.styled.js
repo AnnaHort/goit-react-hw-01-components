@@ -11,13 +11,13 @@ flex-direction: column;
 align-items: center;
 `
 
-export const Title = styled.h2`
-border: 1px solid;
-padding: 16px 110px;
-border-bottom: 0;
-font-size: 24px;
-font-weight: bold;
-`
+// export const Title = styled.h2`
+// border: 1px solid;
+// padding: 16px 110px;
+// border-bottom: 0;
+// font-size: 24px;
+// font-weight: bold;
+// `
 
 export const List = styled.ul`
 display: flex;
@@ -36,7 +36,7 @@ export const getRandomColor = () => {
 export const ListItem = styled.li`
 padding: 12px;
 border: 1px solid;
-background-color: ${props => props.backgroundColor};
+background-color: ${props => props.color};
 `
 
 

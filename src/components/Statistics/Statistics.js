@@ -1,12 +1,12 @@
-import { Section, Title, List, ListItem, getRandomColor } from "./Statistics.styled";
+import { Section, List, ListItem, getRandomColor} from "./Statistics.styled";
 
 export const Statistics = ({ stats, title }) => {
   return (
     <Section>
-      <Title>{title}</Title>
+      {title && <h2>{title}</h2>}
       <List>
         {stats.map(statistic => (
-            <ListItem key={statistic.id} backgroundColor={getRandomColor()}>
+            <ListItem key={statistic.id} color={getRandomColor()}>
                 <span>{statistic.label}</span>
                 <span>{statistic.percentage}</span>
             </ListItem>
